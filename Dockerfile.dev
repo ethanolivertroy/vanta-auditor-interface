@@ -1,0 +1,33 @@
+# Development Dockerfile with hot reloading
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install dependencies for all projects
+COPY package*.json ./
+COPY client/package*.json ./client/
+COPY vanta-auditor-api-sdk-typescript/package*.json ./vanta-auditor-api-sdk-typescript/
+
+# Install root dependencies
+RUN npm install
+
+# Install client dependencies
+WORKDIR /app/client
+RUN npm install
+
+# Install and build SDK
+WORKDIR /app/vanta-auditor-api-sdk-typescript
+RUN npm install
+RUN npm run build
+
+# Go back to root
+WORKDIR /app
+
+# Copy application files
+COPY . .
+
+# Expose ports for both backend and frontend
+EXPOSE 3000 5173
+
+# Start development servers
+CMD ["npm", "run", "dev"]

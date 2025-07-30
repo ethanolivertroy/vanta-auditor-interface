@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  vanta-auditor-interface:
+    build: .
+    container_name: vanta-auditor-interface
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      # Optional: Override default app name
+      # - VITE_APP_NAME=My Company Audits
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      # Optional: Mount custom logo
+      # - ./my-logo.png:/app/client/public/logo.png
+      # Optional: Mount .env for credential updates
+      - ./.env:/app/.env:ro
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/api/health', (res) => process.exit(res.statusCode === 200 ? 0 : 1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Development configuration (uncomment to use)
+  # vanta-auditor-interface-dev:
+  #   build: 
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   container_name: vanta-auditor-interface-dev
+  #   ports:
+  #     - "3000:3000"
+  #     - "5173:5173"
+  #   environment:
+  #     - NODE_ENV=development
+  #   env_file:
+  #     - .env
+  #   volumes:
+  #     - ./server:/app/server
+  #     - ./client:/app/client
+  #     - ./vanta-auditor-api-sdk-typescript:/app/vanta-auditor-api-sdk-typescript
+  #     - /app/node_modules
+  #     - /app/client/node_modules
+  #     - /app/vanta-auditor-api-sdk-typescript/node_modules
+  #   command: npm run dev

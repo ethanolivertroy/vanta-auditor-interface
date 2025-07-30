@@ -1,0 +1,322 @@
+lockVersion: 2.0.0
+id: 48344567-ff5d-4d9e-92eb-dfe908f362f2
+management:
+  docChecksum: 32687d9ba29da014326cc097fdfff59d
+  docVersion: 1.0.0
+  speakeasyVersion: 1.583.0
+  generationVersion: 2.658.3
+  releaseVersion: 0.3.0
+  configChecksum: b91da7768fbb2f57f5060768e05e54e1
+  repoURL: https://github.com/VantaInc/vanta-auditor-api-sdk-typescript.git
+  installationURL: https://github.com/VantaInc/vanta-auditor-api-sdk-typescript
+  published: true
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.12
+    core: 3.21.14
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.13
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.5
+    mcpServer: 0.9.3
+    nameOverrides: 2.81.2
+    nullables: 0.1.1
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.3.0
+    unions: 2.85.11
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/components/addauditorinput.md
+  - docs/models/components/addcommentinput.md
+  - docs/models/components/audit.md
+  - docs/models/components/auditevidencestate.md
+  - docs/models/components/auditevidencetype.md
+  - docs/models/components/auditevidenceupdateinput.md
+  - docs/models/components/auditfocus.md
+  - docs/models/components/auditor.md
+  - docs/models/components/auditorcontrol.md
+  - docs/models/components/auditorenabledstatetransition.md
+  - docs/models/components/comment.md
+  - docs/models/components/control.md
+  - docs/models/components/controldomain.md
+  - docs/models/components/controlowner.md
+  - docs/models/components/controlsource.md
+  - docs/models/components/createcustomcontrolinput.md
+  - docs/models/components/createcustomevidencerequestinput.md
+  - docs/models/components/customevidencerequest.md
+  - docs/models/components/customfield.md
+  - docs/models/components/evidence.md
+  - docs/models/components/evidencecontrol.md
+  - docs/models/components/evidenceurl.md
+  - docs/models/components/frameworkid.md
+  - docs/models/components/frameworksection.md
+  - docs/models/components/frameworksectionframeworkid.md
+  - docs/models/components/owner.md
+  - docs/models/components/pageinfo.md
+  - docs/models/components/paginatedresponseaudit.md
+  - docs/models/components/paginatedresponseauditorcontrol.md
+  - docs/models/components/paginatedresponseauditorcontrolresults.md
+  - docs/models/components/paginatedresponsecomment.md
+  - docs/models/components/paginatedresponsecommentresults.md
+  - docs/models/components/paginatedresponseevidence.md
+  - docs/models/components/paginatedresponseevidenceresults.md
+  - docs/models/components/paginatedresponseevidenceurl.md
+  - docs/models/components/paginatedresponseevidenceurlresults.md
+  - docs/models/components/recurrenceduration.md
+  - docs/models/components/results.md
+  - docs/models/components/role.md
+  - docs/models/components/section.md
+  - docs/models/components/security.md
+  - docs/models/components/statusupdate.md
+  - docs/models/components/value.md
+  - docs/models/operations/createcommentforauditevidencerequest.md
+  - docs/models/operations/createcustomcontrolrequest.md
+  - docs/models/operations/createcustomevidencerequestrequest.md
+  - docs/models/operations/listauditcommentsrequest.md
+  - docs/models/operations/listauditcontrolsrequest.md
+  - docs/models/operations/listauditevidencerequest.md
+  - docs/models/operations/listauditevidenceurlsrequest.md
+  - docs/models/operations/listauditsrequest.md
+  - docs/models/operations/updateauditevidencerequest.md
+  - docs/sdks/auditors/README.md
+  - docs/sdks/audits/README.md
+  - docs/sdks/vanta/README.md
+  - eslint.config.mjs
+  - examples/.env.template
+  - examples/README.md
+  - examples/auditsList.example.ts
+  - examples/package.json
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/auditorsCreate.ts
+  - src/funcs/auditsCreateCommentForEvidence.ts
+  - src/funcs/auditsCreateCustomControl.ts
+  - src/funcs/auditsCreateCustomEvidenceRequest.ts
+  - src/funcs/auditsGetEvidenceUrls.ts
+  - src/funcs/auditsList.ts
+  - src/funcs/auditsListComments.ts
+  - src/funcs/auditsListControls.ts
+  - src/funcs/auditsListEvidence.ts
+  - src/funcs/auditsUpdateEvidence.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/mcp-server/build.mts
+  - src/mcp-server/cli.ts
+  - src/mcp-server/cli/start/command.ts
+  - src/mcp-server/cli/start/impl.ts
+  - src/mcp-server/console-logger.ts
+  - src/mcp-server/extensions.ts
+  - src/mcp-server/mcp-server.ts
+  - src/mcp-server/prompts.ts
+  - src/mcp-server/resources.ts
+  - src/mcp-server/scopes.ts
+  - src/mcp-server/server.ts
+  - src/mcp-server/shared.ts
+  - src/mcp-server/tools.ts
+  - src/mcp-server/tools/auditorsCreate.ts
+  - src/mcp-server/tools/auditsCreateCommentForEvidence.ts
+  - src/mcp-server/tools/auditsCreateCustomControl.ts
+  - src/mcp-server/tools/auditsCreateCustomEvidenceRequest.ts
+  - src/mcp-server/tools/auditsGetEvidenceUrls.ts
+  - src/mcp-server/tools/auditsList.ts
+  - src/mcp-server/tools/auditsListComments.ts
+  - src/mcp-server/tools/auditsListControls.ts
+  - src/mcp-server/tools/auditsListEvidence.ts
+  - src/mcp-server/tools/auditsUpdateEvidence.ts
+  - src/models/components/addauditorinput.ts
+  - src/models/components/addcommentinput.ts
+  - src/models/components/audit.ts
+  - src/models/components/auditevidencestate.ts
+  - src/models/components/auditevidencetype.ts
+  - src/models/components/auditevidenceupdateinput.ts
+  - src/models/components/auditfocus.ts
+  - src/models/components/auditor.ts
+  - src/models/components/auditorcontrol.ts
+  - src/models/components/auditorenabledstatetransition.ts
+  - src/models/components/comment.ts
+  - src/models/components/control.ts
+  - src/models/components/controldomain.ts
+  - src/models/components/controlsource.ts
+  - src/models/components/createcustomcontrolinput.ts
+  - src/models/components/createcustomevidencerequestinput.ts
+  - src/models/components/customevidencerequest.ts
+  - src/models/components/customfield.ts
+  - src/models/components/evidence.ts
+  - src/models/components/evidencecontrol.ts
+  - src/models/components/evidenceurl.ts
+  - src/models/components/frameworkid.ts
+  - src/models/components/frameworksection.ts
+  - src/models/components/index.ts
+  - src/models/components/pageinfo.ts
+  - src/models/components/paginatedresponseaudit.ts
+  - src/models/components/paginatedresponseauditorcontrol.ts
+  - src/models/components/paginatedresponsecomment.ts
+  - src/models/components/paginatedresponseevidence.ts
+  - src/models/components/paginatedresponseevidenceurl.ts
+  - src/models/components/recurrenceduration.ts
+  - src/models/components/section.ts
+  - src/models/components/security.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/responsevalidationerror.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/errors/vantaerror.ts
+  - src/models/operations/createcommentforauditevidence.ts
+  - src/models/operations/createcustomcontrol.ts
+  - src/models/operations/createcustomevidencerequest.ts
+  - src/models/operations/index.ts
+  - src/models/operations/listauditcomments.ts
+  - src/models/operations/listauditcontrols.ts
+  - src/models/operations/listauditevidence.ts
+  - src/models/operations/listauditevidenceurls.ts
+  - src/models/operations/listaudits.ts
+  - src/models/operations/updateauditevidence.ts
+  - src/sdk/auditors.ts
+  - src/sdk/audits.ts
+  - src/sdk/index.ts
+  - src/sdk/sdk.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  ListAudits:
+    Example 1:
+      parameters:
+        query:
+          pageSize: 10
+      responses:
+        "200":
+          application/json: {"results": {"data": [{"id": "65fc81a3359c8508c9af880f", "customerOrganizationName": "corporation.com", "customerDisplayName": "Corporation Company", "customerOrganizationId": "65fc81a3359c8508c9af880f", "auditStartDate": "2024-03-07T21:25:56Z", "auditEndDate": "2024-03-14T21:25:56Z", "earlyAccessStartsAt": "2024-03-07T21:25:56Z", "framework": "SOC 2 Type II", "allowAuditorEmails": ["sam@auditor.com"], "allowAllAuditors": true, "deletionDate": "2024-03-07T21:25:56Z", "creationDate": "2024-03-07T21:25:56Z", "modificationDate": "2024-03-07T21:25:56Z", "completionDate": "2024-03-07T21:25:56Z", "auditFocus": "EXTERNAL"}], "pageInfo": {"endCursor": "YXJyYXljb25uZWN0aW9uOjE=", "hasNextPage": false, "hasPreviousPage": false, "startCursor": "YXJyYXljb25uZWN0aW9uOjA="}}}
+  ListAuditEvidenceUrls:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+          auditEvidenceId: "<id>"
+        query:
+          pageSize: 10
+      responses:
+        "200":
+          application/json: {"results": {"data": [{"id": "NjVmYzgxYTMzNTljODUwOGM5YWY4ODBm", "url": "https://s3.amazonaws.com/audit-evidence/2022/audit.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=secret%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221104T140227Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b228dbec8c1008c80c162e1210e4503dceead1e4d4751b4d9787314fd6da4d55", "filename": "example.jpg", "isDownloadable": true}], "pageInfo": {"endCursor": "YXJyYXljb25uZWN0aW9uOjE=", "hasNextPage": false, "hasPreviousPage": false, "startCursor": "YXJyYXljb25uZWN0aW9uOjA="}}}
+  ListAuditEvidence:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+        query:
+          pageSize: 10
+      responses:
+        "200":
+          application/json: {"results": {"data": [{"id": "65fc81a3359c8508c9af880f", "externalId": "cG9saWN5OmFjY2Vzcy1jb250cm9sLXBvbGljeQo=", "status": "Ready for audit", "name": "Access Control Policy", "deletionDate": "2024-03-07T21:25:56Z", "creationDate": "2024-03-07T21:25:56Z", "statusUpdatedDate": "2024-03-07T21:25:56Z", "testStatus": "The test was passing during this period", "evidenceType": "Policy", "evidenceId": "access-control-policy", "relatedControls": [{"name": "CRY-104", "sectionNames": ["Article 13"]}], "description": "example description of test"}], "pageInfo": {"endCursor": "YXJyYXljb25uZWN0aW9uOjE=", "hasNextPage": false, "hasPreviousPage": false, "startCursor": "YXJyYXljb25uZWN0aW9uOjA="}}}
+  ListAuditComments:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+        query:
+          pageSize: 10
+      responses:
+        "200":
+          application/json: {"results": {"data": [{"id": "65fc81a3359c8508c9af880f", "auditEvidenceId": "65fc81a3359c8508c9af880f", "text": "Some comment", "creationDate": "2024-03-07T21:25:56Z", "modificationDate": "2024-03-07T21:25:56Z", "deletionDate": "2024-03-07T21:25:56Z", "email": "vlad@vantaroo.com"}], "pageInfo": {"endCursor": "YXJyYXljb25uZWN0aW9uOjE=", "hasNextPage": false, "hasPreviousPage": false, "startCursor": "YXJyYXljb25uZWN0aW9uOjA="}}}
+  ListAuditControls:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+        query:
+          pageSize: 10
+      responses:
+        "200":
+          application/json: {"results": {"data": [{"id": "a2f7e1b9d0c3f4e5a6c7b8d9", "externalId": "CRY-104", "name": "Data encryption utilized", "description": "Access reviews are performed to ensure that access is appropriate for the user's role and responsibilities.", "source": "Vanta", "domains": ["CRYPTOGRAPHIC_PROTECTIONS"], "owner": {"id": "65e1efde08e8478f143a8ff9", "displayName": "Example Owner", "emailAddress": "example-person@email.com"}, "role": null, "customFields": [], "framework": "soc2", "sections": [{"name": "IPP", "framework": "HITRUST"}]}], "pageInfo": {"endCursor": "YXJyYXljb25uZWN0aW9uOjE=", "hasNextPage": false, "hasPreviousPage": false, "startCursor": "YXJyYXljb25uZWN0aW9uOjA="}}}
+  CreateCommentForAuditEvidence:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+          auditEvidenceId: "<id>"
+      requestBody:
+        application/json: {"text": "<value>", "email": "Carmen.Bogan@yahoo.com", "creationDate": "2024-05-28T11:04:29.369Z"}
+      responses:
+        "200":
+          application/json: {"id": "65fc81a3359c8508c9af880f", "auditEvidenceId": "65fc81a3359c8508c9af880f", "text": "Some comment", "creationDate": "2024-03-07T21:25:56Z", "modificationDate": "2024-03-07T21:25:56Z", "deletionDate": "2024-03-07T21:25:56Z", "email": "vlad@vantaroo.com"}
+  UpdateAuditEvidence:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+          auditEvidenceId: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"id": "65fc81a3359c8508c9af880f", "externalId": "cG9saWN5OmFjY2Vzcy1jb250cm9sLXBvbGljeQo=", "status": "Ready for audit", "name": "Access Control Policy", "deletionDate": "2024-03-07T21:25:56Z", "creationDate": "2024-03-07T21:25:56Z", "statusUpdatedDate": "2024-03-07T21:25:56Z", "testStatus": "The test was passing during this period", "evidenceType": "Policy", "evidenceId": "access-control-policy", "relatedControls": [{"name": "CRY-104", "sectionNames": ["Article 13"]}], "description": "example description of test"}
+  CreateCustomEvidenceRequest:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+      requestBody:
+        application/json: {"controlIds": ["<value 1>", "<value 2>"], "title": "<value>", "description": "pure bludgeon deliberately question although", "cadence": "P1D", "reminderWindow": "P0D", "isRestricted": false, "auditorEmail": "<value>"}
+      responses:
+        "200":
+          application/json: {"id": "65fc81a3359c8508c9af880f", "controlIds": ["1.1.2.a"], "title": "Access Control Policy", "description": "Description for Access Control Policy", "cadence": "P6M", "reminderWindow": "P6M", "isRestricted": true}
+  CreateCustomControl:
+    Example 1:
+      parameters:
+        path:
+          auditId: "<id>"
+      requestBody:
+        application/json: {"externalId": "<id>", "name": null, "description": "yet plus utter queasily what juvenile wound", "effectiveDate": "2024-11-10T13:58:54.564Z", "category": "CLOUD_SECURITY"}
+      responses:
+        "201":
+          application/json: {"id": "a2f7e1b9d0c3f4e5a6c7b8d9", "externalId": "CRY-104", "name": "Data encryption utilized", "description": "Access reviews are performed to ensure that access is appropriate for the user's role and responsibilities.", "source": "Vanta", "domains": ["CRYPTOGRAPHIC_PROTECTIONS"], "owner": {"id": "65e1efde08e8478f143a8ff9", "displayName": "Example Owner", "emailAddress": "example-person@email.com"}, "role": "CONTROLLER", "customFields": [{"label": "Additional context", "value": "This control is critical for GDPR compliance"}]}
+  CreateAuditor:
+    Example 1:
+      requestBody:
+        application/json: {"email": "Genesis_Kunze87@yahoo.com", "givenName": "<value>", "familyName": "<value>"}
+      responses:
+        "200":
+          application/json: {"id": "65fc81a3359c8508c9af880f", "organizationId": "8c9af880f1a335965fc850c8", "email": "testauditor@audit.com", "givenName": "Sam", "familyName": "Auditor"}
+examplesVersion: 1.0.2
+generatedTests: {}

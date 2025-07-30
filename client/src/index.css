@@ -1,0 +1,189 @@
+:root {
+  /* Catppuccin Mocha Colors */
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+  --ctp-text: #cdd6f4;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext0: #a6adc8;
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay0: #6c7086;
+  --ctp-surface2: #585b70;
+  --ctp-surface1: #45475a;
+  --ctp-surface0: #313244;
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+
+  /* Application Colors */
+  --bg-primary: var(--ctp-base);
+  --bg-secondary: var(--ctp-mantle);
+  --bg-tertiary: var(--ctp-crust);
+  --surface: var(--ctp-surface0);
+  --surface-hover: var(--ctp-surface1);
+  --surface-active: var(--ctp-surface2);
+  --text-primary: var(--ctp-text);
+  --text-secondary: var(--ctp-subtext1);
+  --text-tertiary: var(--ctp-subtext0);
+  --border: var(--ctp-surface0);
+  --border-hover: var(--ctp-surface1);
+  --accent: var(--ctp-mauve);
+  --accent-hover: var(--ctp-lavender);
+  --success: var(--ctp-green);
+  --warning: var(--ctp-yellow);
+  --error: var(--ctp-red);
+  --info: var(--ctp-blue);
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--surface);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+button:hover {
+  border-color: var(--accent);
+  background-color: var(--surface-hover);
+}
+button:active {
+  background-color: var(--surface-active);
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+button.primary {
+  background-color: var(--accent);
+  color: var(--ctp-crust);
+  border-color: var(--accent);
+}
+button.primary:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+input, textarea, select {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.5em;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1em;
+  transition: all 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-color: var(--accent);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+.card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  border-radius: 999px;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.badge-success {
+  background-color: var(--ctp-green);
+  color: var(--ctp-crust);
+}
+
+.badge-warning {
+  background-color: var(--ctp-yellow);
+  color: var(--ctp-crust);
+}
+
+.badge-error {
+  background-color: var(--ctp-red);
+  color: var(--ctp-crust);
+}
+
+.badge-info {
+  background-color: var(--ctp-blue);
+  color: var(--ctp-crust);
+}
