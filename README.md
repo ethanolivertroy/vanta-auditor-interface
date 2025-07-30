@@ -3,7 +3,7 @@
 > [!WARNING]
 > **DISCLAIMER**: This is a proof-of-concept (POC) application provided "as is" without warranty of any kind. The author(s) are not responsible for any damages, data loss, security breaches, or other issues that may arise from using this software. Use at your own risk and ensure you comply with all applicable laws, regulations, and Vanta's Terms of Service. This project is not affiliated with or endorsed by Vanta.
 
-This is simply a POC or template that can be used to create a local web app to interface with the Vanta Auditor API. Hope it helps someone!
+This is simply a POC or template that can be used to create a local web app to interface with the Vanta Auditor API. I really just wanted a way to look at evidence without it being opened in another page at first so the pdf/json viewer came first. Hope it helps someone!
 
 ![Vanta Auditor Interface](https://img.shields.io/badge/Built_with-React-61DAFB?style=flat-square&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
